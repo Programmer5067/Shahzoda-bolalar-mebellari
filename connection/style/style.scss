@@ -1,0 +1,929 @@
+$var1: #ebd3ff;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 22px;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: $var1;
+	height: 100px;
+	.container {
+		width: 80%;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+	}
+	.logo {
+		width: 15%;
+		display: flex;
+		align-items: center;
+		img {
+			height: 95px;
+			width: 100px;
+			border-radius: 50%;
+		}
+	}
+	.menu {
+		width: 70%;
+		display: flex;
+		align-items: center;
+		.menu-list {
+			width: 100%;
+			list-style: none;
+			display: flex;
+			justify-content: space-evenly;
+			justify-items: center;
+			position: relative;
+			top: 10px;
+		}
+		.path_01 {
+			color: blue;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.contact {
+    position: relative;
+    top: 150px;
+    height: 500px;
+    width: 850px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+
+    .phone {
+        display: flex;
+
+        .img-phone {
+            margin-top: 50px;
+            height: 110px;
+            width: 120px;
+            border-radius: 50%;
+            margin-left: 50px;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+        }
+
+        .text-phone {
+            width: 50%;
+            margin-left: 50px;
+            margin-top: 80px;
+        }
+
+        .num {
+            margin-top: 90px;
+            margin-right: 10px;
+        }
+    }
+
+    .tg {
+        display: flex;
+
+        .img-tg {
+            margin-top: 50px;
+            height: 110px;
+            width: 120px;
+            border-radius: 50%;
+            margin-left: 50px;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+        }
+
+        .text-tg {
+            width: 40%;
+            margin-left: 50px;
+            margin-top: 80px;
+        }
+
+        .name-tg {
+            margin-top: 100px;
+            margin-left: 110px;
+            color: blue;
+        }
+    }
+
+    .inst {
+        display: flex;
+
+        .img-inst {
+            margin-top: 50px;
+            height: 110px;
+            width: 120px;
+            border-radius: 50%;
+            margin-left: 50px;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+        }
+
+        .text-inst {
+            width: 40%;
+            margin-left: 50px;
+            margin-top: 80px;
+        }
+
+        .name-inst {
+            margin-top:  100px;
+            margin-left: 110px;
+            color: blue;
+        }
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    body{
+        font-size: 18px !important;
+    }
+    .logo {
+        position: relative;
+        right: 30px !important;
+    }
+    .menu-item {
+        position: relative;
+        left: 30px;
+        width: 100%;
+    }
+    .same {
+        position: relative;
+        top: 10px !important;
+        margin-left: 30px;
+    }
+    .contact {
+        border: none !important;
+        width: 100%;
+
+        .phone {
+            display: block !important;
+
+            .text-phone {
+                width: 85% !important;
+                text-align: center;
+                position: relative;
+                bottom: 150px;
+                left: 30px;
+                margin: 0;
+            }
+
+            img {
+                position: relative;
+                top: 30px;
+            }
+
+            .num {
+                position: relative;
+                bottom: 170px;
+                right: 20px;
+                text-align: end;
+            } 
+        }
+
+        .tg {
+            display: block !important;
+
+            .text-tg {
+                width: 70% !important;
+                text-align: center;
+                position: relative;
+                bottom: 300px;
+                left: 20px;
+            }
+
+            .name-tg {
+                position: relative;
+                bottom: 230px;
+                margin-left: 270px;
+            }
+
+            .img-tg {
+                position: relative;
+                bottom: 40px;
+            }
+        }
+
+        .inst {
+            display: block !important;
+            height: 150px;
+
+            .text-inst {
+                width: 70%;
+                text-align: center;
+                position: relative;
+                bottom: 350px;
+                margin-right: 5px;
+                left: 20px;
+            }
+
+            .name-inst {
+                position: relative;
+                bottom: 280px;
+                margin-left: 270px;
+            }
+
+            .img-inst {
+                position: relative;
+                bottom: 90px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 449px) and (max-width: 480px) {
+	body {
+        font-size: 19px;
+    }
+    .logo {
+        position: relative;
+        right: 30px !important;
+    }
+    .menu-item {
+        position: relative;
+        left: 40px;
+        width: 100%;
+    }
+    .same {
+        position: relative;
+        top: 10px !important;
+        margin-left: 35px;
+    }
+    .contact {
+        border: none;
+        width: 100%;
+
+        .phone {
+            display: block !important;
+            height:  200px;
+
+            .text-phone {
+                width: 80%;
+                position: relative;
+                bottom: 230px;
+                margin-right: 5px;
+                text-align: center;
+            }
+
+            img {
+                position: relative;
+                top: 30px;
+            }
+
+            .num {
+                position: relative;
+                bottom: 250px;
+                right: 40px;
+                text-align: end;
+            } 
+        }
+
+        .tg {
+            display: block !important;
+            height:  200px;
+
+            .text-tg {
+                width: 70% !important;
+                text-align: center;
+                position: relative;
+                bottom: 180px;
+                left: 40px;
+            }
+
+            .name-tg {
+                position: relative;
+                bottom: 120px;
+                left: 200px;
+            }
+
+            .img-tg {
+                position: relative;
+                top: 70px;
+            }
+        }
+
+        .inst {
+            display: block !important;
+            height:  100px;
+
+            .text-inst {
+                width: 70% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 40px;
+            }
+
+            .name-inst {
+                position: relative;
+                bottom: 80px;
+                text-align: end;
+                left: 200px;
+            }
+
+            .img-inst {
+                position: relative;
+                top: 100px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 580px) {
+    body {
+        font-size: 20px;
+    }
+    .logo {
+        position: relative;
+        right: 30px !important;
+    }
+    .menu-item {
+        margin-left: 30px;
+    }
+    .same {
+        position: relative;
+        top: 10px;
+        left: 7px;
+        margin-right: 10px;
+    }
+    .contact {
+        border: none;
+        width: 100%;
+
+        .phone {
+            display: block !important;
+            height:  200px;
+
+            .text-phone {
+                width: 75%;
+                position: relative;
+                bottom: 230px;
+                left: 20px;
+                text-align: center;
+            }
+            img {
+                position: relative;
+                top: 30px;
+                left: 0px !important;
+            }
+            .num {
+                position: relative;
+                bottom: 250px;
+                text-align: right;
+                right: 40px;
+            } 
+        }
+
+        .tg {
+            display: block !important;
+            height:  200px;
+
+            .text-tg {
+                width: 60% !important;
+                position: relative;
+                bottom: 180px;
+                left: 70px;
+                text-align: center;
+            }
+            .name-tg {
+                position: relative;
+                bottom: 110px;
+                left: 250px;
+            }
+            .img-tg {
+                position: relative;
+                top: 80px;
+                left: 20px;
+            }
+        }
+
+        .inst {
+            display: block !important;
+            height:  100px;
+
+            .text-inst {
+                width: 60% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 70px;
+            }
+            .name-inst {
+                position: relative;
+                bottom: 90px;
+                left: 250px;
+            }
+            .img-inst {
+                position: relative;
+                top: 100px;
+                left: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+    body {  
+        font-size: 20px !important;
+    }
+    .logo {
+        margin-right: 5px;
+    }
+    .menu-item {
+        margin-left: 30px !important;
+        width: 100%;
+    }
+    .contact {
+        border: none;
+        width: 100%;
+
+        .phone {
+            display: block !important;
+            height:  200px;
+
+            .text-phone {
+                width: 40%  !important;
+                position: relative;
+                bottom: 180px;
+                left: 120px;
+            }
+
+            img {
+                position: relative;
+                top: 0px;
+                left: -30px;
+            }
+
+            .num {
+                position: relative;
+                bottom: 330px;
+                right: 10px;
+                text-align: end;
+            } 
+        }
+
+        .tg {
+            display: block !important;
+            height:  200px;
+
+            .text-tg {
+                width: 50% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .name-tg {
+                position: relative;
+                bottom: 190px;
+                left: 380px;
+            }
+
+            .img-tg {
+                position: relative;
+                top: 0px;
+                left: -20px;
+            }
+        }
+
+        .inst {
+            display: block !important;
+            height:  100px;
+
+            .text-inst {
+                width: 50% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .name-inst {
+                position: relative;
+                bottom: 190px;
+                left: 380px;
+            }
+
+            .img-inst {
+                position: relative;
+                top: 0px;
+                left: -20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 850px) {
+    body {
+        font-size: 22px;
+    }
+    .contact {
+        border: none;
+        width: 100%;
+
+        .phone {
+            display: block !important;
+            height:  200px;
+
+            .text-phone {
+                width: 45%  !important;
+                position: relative;
+                bottom: 180px;
+                left: 120px;
+            }
+
+            img {
+                position: relative;
+                top: 0px;
+                left: -30px;
+            }
+
+            .num {
+                position: relative;
+                bottom: 315px;
+                right: 20px;
+                text-align: end;
+            } 
+        }
+
+        .tg {
+            display: block !important;
+            height:  200px;
+
+            .text-tg {
+                width: 50% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .name-tg {
+                position: relative;
+                bottom: 190px;
+                left: 380px;
+            }
+
+            .img-tg {
+                position: relative;
+                top: 0px;
+                left: -20px;
+            }
+        }
+
+        .inst {
+            display: block !important;
+            height:  100px;
+
+            .text-inst {
+                width: 50% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .name-inst {
+                position: relative;
+                bottom: 190px;
+                left: 380px;
+            }
+
+            .img-inst {
+                position: relative;
+                top: 0px;
+                left: -20px;
+            }
+        }
+    }
+}
+
+
+//done
+@media only screen and (min-width: 851px) and (max-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+    .contact {
+        position: relative;
+        top: 150px;
+        height: 500px;
+        width: 850px;
+        border: none !important;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    
+        .phone {
+            display: flex;
+    
+            .img-phone {
+                margin-top: 50px;
+                height: 110px;
+                width: 120px;
+                border-radius: 50%;
+                margin-left: 50px;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+            }
+    
+            .text-phone {
+                width: 50%;
+                margin-left: 50px;
+                margin-top: 80px;
+            }
+    
+            .num {
+                margin-top: 90px;
+                margin-right: 10px;
+            }
+        }
+    
+        .tg {
+            display: flex;
+    
+            .img-tg {
+                margin-top: 50px;
+                height: 110px;
+                width: 120px;
+                border-radius: 50%;
+                margin-left: 50px;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+            }
+    
+            .text-tg {
+                width: 40%;
+                margin-left: 50px;
+                margin-top: 80px;
+            }
+    
+            .name-tg {
+                margin-top: 100px;
+                margin-left: 110px;
+                color: blue;
+            }
+        }
+    
+        .inst {
+            display: flex;
+    
+            .img-inst {
+                margin-top: 50px;
+                height: 110px;
+                width: 120px;
+                border-radius: 50%;
+                margin-left: 50px;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+            }
+    
+            .text-inst {
+                width: 40%;
+                margin-left: 50px;
+                margin-top: 80px;
+            }
+    
+            .name-inst {
+                margin-top: 100px;
+                margin-left: 115px;
+                color: blue;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 850px) {
+    body {
+        font-size: 22px;
+    }
+    // .logo {
+    //     margin-right: 5px;
+    // }
+    // .menu-item {
+    //     margin-left: 30px;
+    //     width: 100%;
+    // }
+    .contact {
+        border: none;
+        width: 100%;
+
+        .phone {
+            display: block !important;
+            height:  200px;
+
+            .text-phone {
+                width: 45%;
+                position: relative;
+                bottom: 180px;
+                left: 120px;
+                // text-align: center;
+            }
+
+            img {
+                position: relative;
+                top: 0px;
+                left: -30px;
+            }
+
+            .num {
+                position: relative;
+                bottom: 315px;
+                right: 40px;
+                text-align: end;
+            } 
+        }
+
+        .tg {
+            display: block !important;
+            height:  200px;
+
+            .text-tg {
+                width: 40% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .name-tg {
+                position: relative;
+                bottom: 190px;
+                left: 450px;
+            }
+
+            .img-tg {
+                position: relative;
+                top: 0px;
+                left: -20px;
+            }
+        }
+
+        .inst {
+            display: block !important;
+            height:  100px;
+
+            .text-inst {
+                width: 40% !important;
+                text-align: center;
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .name-inst {
+                position: relative;
+                bottom: 200px;
+                left: 450px;
+            }
+
+            .img-inst {
+                position: relative;
+                top: 0px;
+                left: -20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+    .contact {
+        position: relative;
+        top: 150px;
+        height: 500px;
+        width: 850px;
+        border: none !important;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    
+        .phone {
+            display: flex;
+    
+            .img-phone {
+                margin-top: 50px;
+                height: 110px;
+                width: 120px;
+                border-radius: 50%;
+                margin-left: 50px;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+            }
+    
+            .text-phone {
+                width: 50%;
+                margin-left: 50px;
+                margin-top: 80px;
+            }
+    
+            .num {
+                margin-top: 90px;
+                margin-right: 10px;
+            }
+        }
+    
+        .tg {
+            display: flex;
+    
+            .img-tg {
+                margin-top: 50px;
+                height: 110px;
+                width: 120px;
+                border-radius: 50%;
+                margin-left: 50px;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+            }
+    
+            .text-tg {
+                width: 40%;
+                margin-left: 50px;
+                margin-top: 80px;
+            }
+    
+            .name-tg {
+                margin-top: 100px;
+                margin-left: 110px;
+                color: blue;
+            }
+        }
+    
+        .inst {
+            display: flex;
+    
+            .img-inst {
+                margin-top: 50px;
+                height: 110px;
+                width: 120px;
+                border-radius: 50%;
+                margin-left: 50px;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+            }
+    
+            .text-inst {
+                width: 40%;
+                margin-left: 50px;
+                margin-top: 80px;
+            }
+    
+            .name-inst {
+                margin-top: 100px;
+                margin-left: 115px;
+                color: blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .contact {
+        border: 3px solid black;
+    }
+}
