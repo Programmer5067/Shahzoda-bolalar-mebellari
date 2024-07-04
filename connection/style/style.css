@@ -208,11 +208,11 @@ a {
     bottom: 150px;
     left: 30px;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
   .contact .phone img {
     position: relative;
-    top: 30px;
+    top: 30px !important;
   }
   .contact .phone .num {
     position: relative;
@@ -302,7 +302,7 @@ a {
   }
   .contact .phone img {
     position: relative;
-    top: 50px;
+    top: 30px;
   }
   .contact .phone .num {
     position: relative;

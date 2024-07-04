@@ -211,12 +211,12 @@ a {
                 bottom: 150px;
                 left: 30px;
                 margin: 0;
-                text-align: left;
+                text-align: center;
             }
 
             img {
                 position: relative;
-                top: 30px;
+                top: 30px !important;
             }
 
             .num {
@@ -323,7 +323,7 @@ a {
 
             img {
                 position: relative;
-                top: 50px;
+                top: 30px;
             }
 
             .num {
