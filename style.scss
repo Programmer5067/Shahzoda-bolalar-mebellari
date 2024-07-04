@@ -58,27 +58,58 @@ body {
 
 a {
     text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
     color: black;
 }
 
+
 .main-text {
     margin: 0 auto;
-    width: 75%;
+    width: 75% !important;
     padding-top: 150px;
     padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 448px) {
+@media only screen and (max-width: 400px) {
     body{
         font-size: 18px !important;
     }
     .logo {
         position: relative;
         right: 30px !important;
-    }
+        img {
+            width: 95px !important;
+            height: 90px !important;
+        }
+    }  
     .menu-item {
         position: relative;
         left: 30px;
+        width: 100%;
+    }
+    .same {
+        position: relative;
+        top: 10px !important;
+        margin-left: 30px;
+    }
+} 
+
+@media screen and (min-width: 401px) and (max-width: 448px) {
+    body{
+        font-size: 18px !important;
+    }
+    .logo {
+        position: relative;
+        right: 30px !important;
+        img {
+            width: 95px !important;
+            height: 90px !important;
+        }
+    }
+    .menu-item {
+        position: relative;
+        left: 40px;
         width: 100%;
     }
     .same {
@@ -106,6 +137,14 @@ a {
         top: 10px !important;
         margin-left: 35px;
     }
+    .logo {
+        position: relative;
+        right: 30px !important;
+        img {
+            width: 95px !important;
+            height: 90px !important;
+        }
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 580px) {
@@ -125,6 +164,14 @@ a {
         left: 7px;
         margin-right: 10px;
     }
+    .logo {
+        position: relative;
+        right: 30px !important;
+        img {
+            width: 95px !important;
+            height: 90px !important;
+        }
+    }
 }
 
 @media only screen and (min-width: 581px) and (max-width: 768px) {
@@ -132,7 +179,13 @@ a {
         font-size: 20px;
     }
     .logo {
+        position: relative;
+        right: 30px !important;
         margin-right: 5px;
+        img {
+            width: 95px !important;
+            height: 90px !important;
+        }
     }
     .menu-item {
         margin-left: 30px;

@@ -70,23 +70,29 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   color: black;
 }
 
 .question {
   margin: 0 auto;
-  width: 40%;
+  width: 40% !important;
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
-@media only screen and (max-width: 448px) {
+@media only screen and (max-width: 400px) {
   body {
     font-size: 18px !important;
   }
   .logo {
     position: relative;
     right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
   }
   .menu-item {
     position: relative;
@@ -99,7 +105,33 @@ a {
     margin-left: 30px;
   }
   .question {
-    width: 70%;
+    width: 70% !important;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 448px) {
+  body {
+    font-size: 18px !important;
+  }
+  .logo {
+    position: relative;
+    right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
+  .menu-item {
+    position: relative;
+    left: 40px;
+    width: 100%;
+  }
+  .same {
+    position: relative;
+    top: 10px !important;
+    margin-left: 30px;
+  }
+  .question {
+    width: 70% !important;
   }
 }
 @media only screen and (min-width: 449px) and (max-width: 480px) {
@@ -120,8 +152,16 @@ a {
     top: 10px !important;
     margin-left: 35px;
   }
+  .logo {
+    position: relative;
+    right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
   .question {
-    width: 65%;
+    width: 60% !important;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 580px) {
@@ -141,8 +181,16 @@ a {
     left: 7px;
     margin-right: 10px;
   }
+  .logo {
+    position: relative;
+    right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
   .question {
-    width: 60%;
+    width: 60% !important;
   }
 }
 @media only screen and (min-width: 581px) and (max-width: 768px) {
@@ -150,14 +198,20 @@ a {
     font-size: 20px;
   }
   .logo {
+    position: relative;
+    right: 30px !important;
     margin-right: 5px;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
   }
   .menu-item {
     margin-left: 30px;
     width: 100%;
   }
   .question {
-    width: 50%;
+    width: 50% !important;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -165,11 +219,11 @@ a {
     font-size: 22px;
   }
   .question {
-    width: 50%;
+    width: 50% !important;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .question {
-    width: 60%;
+    width: 60% !important;
   }
 }

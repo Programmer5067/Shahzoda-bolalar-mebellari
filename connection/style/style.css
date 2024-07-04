@@ -59,6 +59,7 @@ body {
   justify-items: center;
   position: relative;
   top: 10px;
+  left: 0;
 }
 .header .menu .path_01 {
   color: blue;
@@ -69,6 +70,8 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   color: black;
 }
 
@@ -104,10 +107,11 @@ a {
   width: 50%;
   margin-left: 50px;
   margin-top: 80px;
+  text-align: center;
 }
 .contact .phone .num {
   margin-top: 90px;
-  margin-right: 10px;
+  margin-left: 20px;
 }
 .contact .tg {
   display: -webkit-box;
@@ -131,6 +135,7 @@ a {
   width: 40%;
   margin-left: 50px;
   margin-top: 80px;
+  text-align: center;
 }
 .contact .tg .name-tg {
   margin-top: 100px;
@@ -159,6 +164,7 @@ a {
   width: 40%;
   margin-left: 50px;
   margin-top: 80px;
+  text-align: center;
 }
 .contact .inst .name-inst {
   margin-top: 100px;
@@ -166,7 +172,7 @@ a {
   color: blue;
 }
 
-@media only screen and (max-width: 448px) {
+@media only screen and (max-width: 400px) {
   body {
     font-size: 18px !important;
   }
@@ -174,9 +180,102 @@ a {
     position: relative;
     right: 30px !important;
   }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
   .menu-item {
     position: relative;
     left: 30px;
+    width: 100%;
+  }
+  .same {
+    position: relative;
+    top: 10px !important;
+    margin-left: 30px;
+  }
+  .contact {
+    border: none !important;
+    width: 100%;
+  }
+  .contact .phone {
+    display: block !important;
+  }
+  .contact .phone .text-phone {
+    width: 90% !important;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    left: 30px;
+    margin: 0;
+    text-align: left;
+  }
+  .contact .phone img {
+    position: relative;
+    top: 30px;
+  }
+  .contact .phone .num {
+    position: relative;
+    bottom: 170px;
+    right: 20px;
+    text-align: end;
+  }
+  .contact .tg {
+    display: block !important;
+  }
+  .contact .tg .text-tg {
+    width: 70% !important;
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+    left: 20px;
+  }
+  .contact .tg .name-tg {
+    position: relative;
+    bottom: 230px;
+    margin-left: 270px;
+  }
+  .contact .tg .img-tg {
+    position: relative;
+    bottom: 40px;
+  }
+  .contact .inst {
+    display: block !important;
+    height: 150px;
+  }
+  .contact .inst .text-inst {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+    margin-right: 5px;
+    left: 20px;
+  }
+  .contact .inst .name-inst {
+    position: relative;
+    bottom: 280px;
+    margin-left: 270px;
+  }
+  .contact .inst .img-inst {
+    position: relative;
+    bottom: 90px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 448px) {
+  body {
+    font-size: 18px !important;
+  }
+  .logo {
+    position: relative;
+    right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
+  .menu-item {
+    position: relative;
+    left: 40px;
     width: 100%;
   }
   .same {
@@ -198,6 +297,8 @@ a {
     bottom: 150px;
     left: 30px;
     margin: 0;
+    -moz-text-align-last: left;
+         text-align-last: left;
   }
   .contact .phone img {
     position: relative;
@@ -267,6 +368,14 @@ a {
     position: relative;
     top: 10px !important;
     margin-left: 35px;
+  }
+  .logo {
+    position: relative;
+    right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
   }
   .contact {
     border: none;
@@ -352,6 +461,14 @@ a {
     left: 7px;
     margin-right: 10px;
   }
+  .logo {
+    position: relative;
+    right: 30px !important;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
   .contact {
     border: none;
     width: 100%;
@@ -361,7 +478,7 @@ a {
     height: 200px;
   }
   .contact .phone .text-phone {
-    width: 75%;
+    width: 76%;
     position: relative;
     bottom: 230px;
     left: 20px;
@@ -421,15 +538,21 @@ a {
     left: 20px;
   }
 }
-@media only screen and (min-width: 581px) and (max-width: 768px) {
+@media only screen and (min-width: 581px) and (max-width: 647px) {
   body {
-    font-size: 20px !important;
+    font-size: 20px;
   }
   .logo {
+    position: relative;
+    right: 30px !important;
     margin-right: 5px;
   }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
   .menu-item {
-    margin-left: 30px !important;
+    margin-left: 30px;
     width: 100%;
   }
   .contact {
@@ -441,10 +564,11 @@ a {
     height: 200px;
   }
   .contact .phone .text-phone {
-    width: 40% !important;
+    width: 35% !important;
     position: relative;
     bottom: 180px;
     left: 120px;
+    text-align: left;
   }
   .contact .phone img {
     position: relative;
@@ -500,9 +624,108 @@ a {
     left: -20px;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 850px) {
+@media only screen and (min-width: 648px) and (max-width: 668px) {
   body {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  .logo {
+    position: relative;
+    right: 30px !important;
+    margin-right: 5px;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
+  .menu-item {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .contact {
+    border: none;
+    width: 100%;
+  }
+  .contact .phone {
+    display: block !important;
+    height: 200px;
+  }
+  .contact .phone .text-phone {
+    width: 48% !important;
+    position: relative;
+    bottom: 180px;
+    left: 120px;
+    text-align: left;
+  }
+  .contact .phone img {
+    position: relative;
+    top: 0px;
+    left: -30px;
+  }
+  .contact .phone .num {
+    position: relative;
+    bottom: 310px;
+    right: 10px;
+    text-align: end;
+  }
+  .contact .tg {
+    display: block !important;
+    height: 200px;
+  }
+  .contact .tg .text-tg {
+    width: 50% !important;
+    text-align: center;
+    position: relative;
+    bottom: 160px;
+    left: 100px;
+  }
+  .contact .tg .name-tg {
+    position: relative;
+    bottom: 190px;
+    left: 420px;
+  }
+  .contact .tg .img-tg {
+    position: relative;
+    top: 0px;
+    left: -20px;
+  }
+  .contact .inst {
+    display: block !important;
+    height: 100px;
+  }
+  .contact .inst .text-inst {
+    width: 50% !important;
+    text-align: center;
+    position: relative;
+    bottom: 160px;
+    left: 100px;
+  }
+  .contact .inst .name-inst {
+    position: relative;
+    bottom: 190px;
+    left: 420px;
+  }
+  .contact .inst .img-inst {
+    position: relative;
+    top: 0px;
+    left: -20px;
+  }
+}
+@media only screen and (min-width: 669px) and (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  .logo {
+    position: relative;
+    right: 30px !important;
+    margin-right: 5px;
+  }
+  .logo img {
+    width: 95px !important;
+    height: 90px !important;
+  }
+  .menu-item {
+    margin-left: 30px;
+    width: 100%;
   }
   .contact {
     border: none;
@@ -517,6 +740,7 @@ a {
     position: relative;
     bottom: 180px;
     left: 120px;
+    text-align: left;
   }
   .contact .phone img {
     position: relative;
@@ -525,8 +749,8 @@ a {
   }
   .contact .phone .num {
     position: relative;
-    bottom: 315px;
-    right: 20px;
+    bottom: 310px;
+    right: 45px;
     text-align: end;
   }
   .contact .tg {
@@ -534,7 +758,7 @@ a {
     height: 200px;
   }
   .contact .tg .text-tg {
-    width: 50% !important;
+    width: 40% !important;
     text-align: center;
     position: relative;
     bottom: 160px;
@@ -543,7 +767,7 @@ a {
   .contact .tg .name-tg {
     position: relative;
     bottom: 190px;
-    left: 380px;
+    left: 450px;
   }
   .contact .tg .img-tg {
     position: relative;
@@ -555,7 +779,7 @@ a {
     height: 100px;
   }
   .contact .inst .text-inst {
-    width: 50% !important;
+    width: 40% !important;
     text-align: center;
     position: relative;
     bottom: 160px;
@@ -564,7 +788,7 @@ a {
   .contact .inst .name-inst {
     position: relative;
     bottom: 190px;
-    left: 380px;
+    left: 450px;
   }
   .contact .inst .img-inst {
     position: relative;
@@ -572,107 +796,9 @@ a {
     left: -20px;
   }
 }
-@media only screen and (min-width: 851px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 850px) {
   body {
-    font-size: 22px;
-  }
-  .contact {
-    position: relative;
-    top: 150px;
-    height: 500px;
-    width: 850px;
-    border: none !important;
-    border-radius: 8px;
-    margin: 0 auto;
-    margin-bottom: 150px;
-  }
-  .contact .phone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contact .phone .img-phone {
-    margin-top: 50px;
-    height: 110px;
-    width: 120px;
-    border-radius: 50%;
-    margin-left: 50px;
-  }
-  .contact .phone .img-phone:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .contact .phone .text-phone {
-    width: 50%;
-    margin-left: 50px;
-    margin-top: 80px;
-  }
-  .contact .phone .num {
-    margin-top: 90px;
-    margin-right: 10px;
-  }
-  .contact .tg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contact .tg .img-tg {
-    margin-top: 50px;
-    height: 110px;
-    width: 120px;
-    border-radius: 50%;
-    margin-left: 50px;
-  }
-  .contact .tg .img-tg:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .contact .tg .text-tg {
-    width: 40%;
-    margin-left: 50px;
-    margin-top: 80px;
-  }
-  .contact .tg .name-tg {
-    margin-top: 100px;
-    margin-left: 110px;
-    color: blue;
-  }
-  .contact .inst {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contact .inst .img-inst {
-    margin-top: 50px;
-    height: 110px;
-    width: 120px;
-    border-radius: 50%;
-    margin-left: 50px;
-  }
-  .contact .inst .img-inst:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .contact .inst .text-inst {
-    width: 40%;
-    margin-left: 50px;
-    margin-top: 80px;
-  }
-  .contact .inst .name-inst {
-    margin-top: 100px;
-    margin-left: 115px;
-    color: blue;
-  }
-}
-@media only screen and (min-width: 670px) and (max-width: 850px) {
-  body {
-    font-size: 22px;
+    font-style: 22px;
   }
   .contact {
     border: none;
@@ -683,10 +809,11 @@ a {
     height: 200px;
   }
   .contact .phone .text-phone {
-    width: 45%;
+    width: 45% !important;
     position: relative;
     bottom: 180px;
     left: 120px;
+    text-align: left;
   }
   .contact .phone img {
     position: relative;
@@ -696,7 +823,7 @@ a {
   .contact .phone .num {
     position: relative;
     bottom: 315px;
-    right: 40px;
+    right: 100px;
     text-align: end;
   }
   .contact .tg {
@@ -704,7 +831,7 @@ a {
     height: 200px;
   }
   .contact .tg .text-tg {
-    width: 40% !important;
+    width: 45% !important;
     text-align: center;
     position: relative;
     bottom: 160px;
@@ -713,7 +840,7 @@ a {
   .contact .tg .name-tg {
     position: relative;
     bottom: 190px;
-    left: 450px;
+    left: 500px;
   }
   .contact .tg .img-tg {
     position: relative;
@@ -725,7 +852,7 @@ a {
     height: 100px;
   }
   .contact .inst .text-inst {
-    width: 40% !important;
+    width: 45% !important;
     text-align: center;
     position: relative;
     bottom: 160px;
@@ -733,8 +860,8 @@ a {
   }
   .contact .inst .name-inst {
     position: relative;
-    bottom: 200px;
-    left: 450px;
+    bottom: 190px;
+    left: 500px;
   }
   .contact .inst .img-inst {
     position: relative;
@@ -742,9 +869,9 @@ a {
     left: -20px;
   }
 }
-@media only screen and (min-width: 850px) and (max-width: 1024px) {
+@media only screen and (min-width: 851px) and (max-width: 1024px) {
   body {
-    font-size: 22px;
+    font-style: 22px;
   }
   .contact {
     position: relative;
@@ -802,7 +929,7 @@ a {
     transition: 0.5s;
   }
   .contact .tg .text-tg {
-    width: 40%;
+    width: 40% !important;
     margin-left: 50px;
     margin-top: 80px;
   }
@@ -830,7 +957,7 @@ a {
     transition: 0.5s;
   }
   .contact .inst .text-inst {
-    width: 40%;
+    width: 40% !important;
     margin-left: 50px;
     margin-top: 80px;
   }
