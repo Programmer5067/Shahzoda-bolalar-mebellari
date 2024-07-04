@@ -297,12 +297,12 @@ a {
     bottom: 150px;
     left: 30px;
     margin: 0;
-    -moz-text-align-last: left;
-         text-align-last: left;
+    -moz-text-align-last: center;
+         text-align-last: center;
   }
   .contact .phone img {
     position: relative;
-    top: 30px;
+    top: 50px;
   }
   .contact .phone .num {
     position: relative;
