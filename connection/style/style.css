@@ -211,8 +211,7 @@ a {
     text-align: center;
   }
   .contact .phone img {
-    position: relative;
-    top: 30px !important;
+    margin-top: 50px;
   }
   .contact .phone .num {
     position: relative;
