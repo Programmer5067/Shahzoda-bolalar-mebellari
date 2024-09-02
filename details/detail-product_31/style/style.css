@@ -769,8 +769,8 @@ a {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   border-bottom: 3px solid black;
   background-color: grey !important;
 }
