@@ -1,0 +1,51 @@
+@import "../../SCSS/style.scss";
+
+.main-text {
+    margin: 0 auto;
+    width: 45%;
+    position: relative;
+    top: 150px;
+    bottom: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+    .main-text {
+        width: 75% !important;
+    }
+} 
+
+@media screen and (min-width: 401px) and (max-width: 448px) {
+    .main-text {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 449px) and (max-width: 480px) {
+    .main-text {
+        width: 70%;
+    } 
+}
+
+@media only screen and (min-width: 481px) and (max-width: 580px) {
+    .main-text {
+        width: 70%;
+    } 
+}
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+    .main-text {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-text {
+        width: 50%;
+    } 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .main-text {
+        width: 45%;
+    }
+}

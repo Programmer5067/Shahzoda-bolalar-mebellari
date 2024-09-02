@@ -1,0 +1,296 @@
+@import "../../SCSS/style.scss";
+@import "../../store/style/style.scss";
+
+.num-body {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    border-radius: 1em;
+    .photo-num {
+        width: 45%;
+        height: 550px;
+        margin-top: 100px;
+        border-radius: 1em;
+        object-fit: cover;
+    }
+    .desc {
+        display: 100% !important;
+        margin-top: 100px;
+        margin-left: 7.5%;
+    }
+}
+
+.grey {
+    color: #8686a2;
+    margin-right: 20px;
+    &::after {
+        margin-left: 20px;
+        content: "............................";
+    }
+}
+
+.price-mini {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    @include price-font;
+    font-size: 35px;
+}
+
+.price-mini-text {
+    text-align: center;
+}
+
+@media screen and (max-width: 364px) {
+    .num-body {
+        display: block;
+        width: 100%;
+        .photo-num {
+            width: 90% !important;
+            height: 400px !important;
+            margin-top: 100px;
+            border-radius: 0;
+            position: relative;
+            left: 5%;
+        }
+        .desc {
+            width: 90%;
+            margin-top: 20px;
+            position: relative;
+            left: 5%;
+            margin-left: 0;
+            .grey::after {
+                margin-left: 20px;
+                content: "............";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (min-width: 365px) and (max-width: 400px) {
+    .num-body {
+        display: block;
+        width: 100%;
+        .photo-num {
+            width: 90% !important;
+            height: 400px !important;
+            margin-top: 100px;
+            border-radius: 0;
+            position: relative;
+            left: 5%;
+        }
+        .desc {
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 0;
+            position: relative;
+            left: 5%;
+            .grey::after {
+                margin-left: 20px;
+                content: "...................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 480px) {
+    .num-body {
+        display: block;
+        width: 100%;
+        .photo-num {
+            width: 90% !important;
+            height: 450px !important;
+            border-radius: 0;
+            position: relative;
+            left: 5%;
+            margin-left: 0;
+        }
+        .desc {
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 0;
+            position: relative;
+            left: 5%;
+            .grey::after {
+                margin-left: 20px;
+                content: ".........................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 580px) {
+    .num-body {
+        display: block;
+        width: 100%;
+        .photo-num {
+            width: 80% !important;
+            height: 450px !important;
+            border-radius: 0;
+            position: relative;
+            left: 10%;
+        }
+        .desc {
+            width: 80%;
+            margin-top: 20px;
+            margin-left: 0;
+            position: relative;
+            left: 10%;
+            .grey::after {
+                margin-left: 20px;
+                content: ".......................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (min-width: 581px) and (max-width: 667px) {
+    .num-body {
+        display: block;
+        width: 100%;
+        .photo-num {
+            width: 80% !important;
+            height: 500px !important;
+            border-radius: 0;
+            position: relative;
+            left: 10%;
+        }
+        .desc {
+            width: 80%;
+            margin-top: 20px;
+            margin-left: 0 !important;
+            position: relative;
+            left: 10%;
+            .grey::after {
+                margin-left: 20px;
+                content: "..........................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+
+@media screen and (min-width: 668px) and (max-width: 750px) {
+    .num-body {
+        display: flex;
+        width: 90%;
+        .photo-num {
+            width: 270px !important;
+            height: 400px !important;
+        }
+        .desc {
+            width: 80%;
+            font-size: 18px;
+            margin-top: 100px;
+            margin-left: 0;
+            position: relative;
+            left: 5%;
+            .grey::after {
+                margin-left: 20px;
+                content: "..................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 900px) {
+    .num-body {
+        display: flex;
+        width: 90%;
+        .photo-num {
+            width: 300px !important;
+            height: 400px !important;
+        }
+        .desc {
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 0;
+            position: relative;
+            left: 5%;
+            .grey::after {
+                margin-left: 20px;
+                content: ".................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .num-body {
+        display: flex;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        .photo-num {
+            width: 350px !important;
+            height: 400px !important;
+        }
+        .desc {
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 0;
+            position: relative;
+            left: 5%;
+            .grey::after {
+                margin-left: 20px;
+                content: "................................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+    .num-body {
+        display: flex;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        .photo-num {
+            width: 350px !important;
+            height: 400px !important;
+        }
+        .desc {
+            font-size: 22px;
+            margin-top: 100px;
+            margin-left: 0;
+            position: relative;
+            left: 5%;
+            .grey::after {
+                margin-left: 20px;
+                content: "...........................";
+            }
+        }
+    }
+    .details {
+        margin-top: -50px !important;
+    }
+}
